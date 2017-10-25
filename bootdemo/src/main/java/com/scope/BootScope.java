@@ -1,17 +1,21 @@
-package com.dhan.bootdemo;
+package com.scope;
 
 import org.slf4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-@SpringBootApplication
-public class BootdemoApplication {
+import com.dhan.bootdemo.PersonDao;
 
-	private static Logger LOGGER = org.slf4j.LoggerFactory.getLogger(BootdemoApplication.class);
+
+
+@SpringBootApplication
+public class BootScope {
+
+	private static Logger LOGGER = org.slf4j.LoggerFactory.getLogger(BootScope.class);
 
 	public static void main(String[] args) {
-		ApplicationContext ap = SpringApplication.run(BootdemoApplication.class, args);
+		ApplicationContext ap = SpringApplication.run(BootScope.class, args);
 
 		PersonDao personDao = ap.getBean(PersonDao.class);
 		PersonDao personDao1 = ap.getBean(PersonDao.class);

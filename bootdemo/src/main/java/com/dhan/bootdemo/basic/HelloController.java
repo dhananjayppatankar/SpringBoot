@@ -1,4 +1,4 @@
-package com.dhan.bootdemo;
+package com.dhan.bootdemo.basic;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

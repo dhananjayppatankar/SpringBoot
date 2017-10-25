@@ -1,10 +1,10 @@
-package com.dhan.bootdemo;
+package com.dhan.bootdemo.basic;
 
-import org.springframework.context.annotation.Primary;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+@Qualifier("merge")
 public class MergeSort implements Sort {
 
 	@Override
